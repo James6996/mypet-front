@@ -1,0 +1,139 @@
+.Container-img {
+  height: auto;
+  position: relative;
+
+  &__image {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  &__content {
+    position: absolute;
+    // font-weight: 400;
+    top: 0px;
+    left: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-weight: 600;
+    // border-radius: 0 1rem 0 0;
+    width: 50%;
+    // padding: 2rem;
+    font-size: 3rem;
+    text-align: left;
+    // border-bottom: 2px solid white;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.Red {
+  color: #f91313;
+  font-weight: bold;
+}
+
+.Caretaker {
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.Caretaker-h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #b60606;
+}
+
+.Caretaker-columns {
+  display: flex;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  &__column-p {
+    font-size: 1rem;
+    text-align: left;
+    padding: 0 2rem;
+  }
+}
+
+.Caretaker-text {
+  width: 80%;
+}
+
+.Caretaker-img {
+  display: flex;
+  flex-flow: row;
+  height: 100%;
+  margin: 0 auto;
+
+  &__image {
+    width: 100%;
+  }
+}
+
+.Home-shops {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  &__column {
+    padding-right: 4rem;
+    width: 60%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      padding-left: 4rem;
+    }
+
+    &-h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #b60606;
+    }
+
+    &-p {
+      font-size: 1rem;
+      text-align: left;
+    }
+  }
+  &__image {
+    margin-bottom: 5rem;
+    width: 60%;
+
+    @media screen and (max-width: 768px) {
+      width: 60%;
+    }
+
+    &-img {
+      display: flex;
+      flex-flow: row;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.Home-button {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 0.4rem;
+  background: #b60606;
+  color: #fff;
+  font-size: 1rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.Home-button:hover {
+  background-color: #009d3f;
+}

@@ -1,0 +1,94 @@
+.H2{
+  margin: 1rem 0 0.2rem 0
+}
+
+.Form {
+  text-align: left;
+
+  
+
+  &__label {
+    padding: 0 0 0.2rem 0;
+    margin: 0;
+  }
+
+  &__label,
+  &__input,
+  &__textarea {
+    font-size: 1rem;
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0.3rem;
+    border: none;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: 'Kodchasan', sans-serif;
+  }
+
+  &__input,
+  &__textarea {
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+
+  &__button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 0.4rem;
+    background: #b60606;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__button:hover {
+    background-color: #009d3f;
+  }
+}
+
+.Box {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  margin: 0 auto;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+  }
+}
+
+.Contact {
+  &__image {
+    width: 80%;
+    text-align: right;
+    margin: 0 auto;
+    transform: translateY(2.9rem);
+    margin-top: -2.9rem;
+
+    @media screen and (min-width: 400px) {
+      transform: translateY(3.7rem);
+      margin-top: -3.7rem;
+    }
+
+    > img {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+  &__form {
+    width: 80%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #cbebf7;
+    width: 80%;
+    margin: 0 auto 100px auto;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+  }
+}

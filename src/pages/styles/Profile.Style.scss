@@ -1,0 +1,81 @@
+.Profile-cover {
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 2rem 0;
+
+  @media screen and (max-width: 1200px) {
+    border-radius: 0;
+  }
+}
+
+.Profile-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.Profile-front-n1 {
+  background-color: #cbebf7;
+  margin: 1rem auto 1.5rem auto;
+  width: 45%;
+  border-radius: 2rem 0 2rem 0;
+  padding: 1rem;
+
+  @media screen and (max-width: 1200px) {
+    width: 65%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 80%;
+  }
+}
+
+// .Profile-front-n2{
+//   position: absolute;
+//   top: 60%;
+//   text-align:center;
+//   margin: 0 auto;
+//   width: 100%;
+// }
+
+// .Profile-front-n3{
+//   text-align:center;
+//   margin: 0 auto;
+//   width: 100%;
+// }
+
+.Profile-h1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.Profile-h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.Profile-imgBack {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  filter: opacity(0.1);
+  z-index: -9999;
+}
+
+.Profile-button {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 0.4rem;
+  background: #b60606;
+  color: #fff;
+  font-size: 1rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.Profile-button:hover {
+  background-color: #009d3f;
+}

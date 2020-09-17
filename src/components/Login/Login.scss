@@ -1,0 +1,75 @@
+
+
+.Login-h3 {
+  margin-top: 3rem;
+  margin-bottom: 1.4rem;
+}
+
+.Login-button {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 0.4rem;
+  background: #b60606;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 5rem;
+}
+
+.Login-button:hover {
+  background-color: #009d3f;
+}
+
+.Login-form {
+  box-sizing: border-box;
+  background-color: #cbebf7;
+  width: 40%;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  text-align: left;
+
+  @media screen and (max-width: 1200px) {
+      width: 60%;
+    }
+  @media screen and (max-width: 768px) {
+      width: 90%;
+    }
+
+  &__label,
+  &__input {
+    text-align: left;
+    font-size: 1rem;
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0.3rem;
+    border: none;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: 'Kodchasan', sans-serif;
+  }
+
+  &__label {
+    margin-bottom: 0.5rem;
+  }
+
+  &__input {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.Login-form-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0.4rem;
+  background: #b60606;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}

@@ -1,0 +1,122 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 70px;
+  background: #fff;
+  margin: 0;
+  padding: 1rem;
+}
+
+nav img {
+  width: 200px;
+  top: 1rem;
+  margin-right: 0;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  display: flex;
+  margin: 0 1rem;
+}
+
+nav ul li .Link {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 5px 0;
+  color: black;
+}
+
+nav ul li .Link::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #b60606;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s linear;
+}
+
+nav ul li .Link:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+label #btn-check,
+label #btn-cancel {
+  font-size: 2rem;
+  float: right;
+  line-height: 80px;
+  margin-right: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  #check {
+    display: block;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+  }
+
+  label #btn-check {
+    display: flex;
+  }
+
+  nav ul {
+    position: fixed;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(108, 3, 3, 0.95);
+    top: 70px;
+    left: 100%;
+    padding-left: 0;
+    transition: all 0.5s;
+    z-index: 9999;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0rem 0 ;
+    text-align: center;
+  }
+  nav ul li .Link {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    line-height:5rem;
+  }
+
+  #check:focus ~ ul {
+    left: 0;
+  }
+
+  #check:focus > label #btn-check {
+    display: none;
+  }
+
+  #check:focus > label #btn-cancel {
+    display: block;
+  }
+}

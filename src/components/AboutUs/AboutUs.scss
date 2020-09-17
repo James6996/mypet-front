@@ -1,0 +1,28 @@
+.aboutus{
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+    justify-content: space-between;
+    
+    &__image{
+        flex-direction: row;
+        border-radius: 50%;
+    }
+    &__links{
+       display: flex;
+       justify-content: space-around;
+       text-decoration: none;
+       color: black;
+    }
+    &__description{
+        text-align: left;
+     
+        width: 90%;
+        margin:2rem auto;
+    }
+    &__description > p{
+        margin-bottom:1rem;
+
+    }
+    
+}

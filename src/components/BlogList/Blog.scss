@@ -1,0 +1,50 @@
+.Blog-cover {
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 2rem 0;
+
+  @media screen and (max-width: 1200px) {
+    border-radius: 0;
+  }
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 auto;
+  text-decoration: none;
+  color: black;
+  border-radius: 2rem;
+  padding: 2rem;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+    padding: 2rem 0;
+  }
+
+  &__description {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  &__title {
+    font-weight: bold;
+  }
+  &__card {
+    padding: 1rem;
+    border-radius: 10%;
+    text-align: center;
+
+    margin: 2rem;
+    &__image {
+      width: 100%;
+      height: auto;
+      border-radius: 0 0 2rem 0;
+
+      
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.Pets {
+  display: flex;
+  border: 1px solid black;
+
+  &__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  &__card {
+    border: 1px solid black;
+    max-width: 300px;
+    height: 400px;
+    &--name {
+      color: red;
+    }
+
+    &--text {
+    }
+  }
+}

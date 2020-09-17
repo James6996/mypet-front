@@ -1,0 +1,17 @@
+.Footer {
+  background: black;
+  width: 100%;
+  border-radius: 100px 100px 0 0;
+
+  > ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 1rem 0;
+  }
+
+  &__item {
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+}

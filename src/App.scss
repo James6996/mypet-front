@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+html,
+body,
+#root {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.App {
+  position: relative;
+  text-align: center;
+  padding: 0;
+  font-family: 'Kodchasan', sans-serif;
+  margin: 0 auto;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0 10%;
+  }
+
+  @media screen and (min-width: 1800px) {
+    margin: 0 15%;
+  }
+
+  &__content {
+    flex: 1;
+  }
+}
